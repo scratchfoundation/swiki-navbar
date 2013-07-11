@@ -7,7 +7,7 @@ a link to a random page. Logged in users can also see a link to the community po
 Code adapted from: 
 https://www.mediawiki.org/wiki/Manual:Interface/Sidebar#Advanced_customization
 */
-s
+
 $wgHooks['SkinBuildSidebar'][] = 'lfHideSidebar';
 function lfHideSidebar( $skin, &$bar ) {
         global $wgUser;

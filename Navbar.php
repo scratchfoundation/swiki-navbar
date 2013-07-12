@@ -38,6 +38,12 @@ function lfHideSidebar( $skin, &$bar ) {
                                         'active' => ''
 		);
 		$bar['navigation'][] = array(
+					 'text'   => 'Current Events',
+                                        'href'   => Title::newFromText( wfMsgForContent( 'currentevents-url' ) )->getFullURL(),
+                                        'id'     => 'currentevents',
+                                        'active' => ''
+		);
+		$bar['navigation'][] = array(
 					 'text'   => 'Recent Changes',
                                         'href'   => Title::newFromText( wfMsgForContent( 'recentchanges-url' ) )->getFullURL(),
                                         'id'     => 'recentchanges',

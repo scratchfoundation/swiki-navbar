@@ -17,13 +17,13 @@ function lfHideSidebar( $skin, &$bar ) {
                                 array(
                                         'text'   => Title::newFromText( wfMsgForContent( 'mainpage' ) ),
                                         'href'   => Title::newFromText( wfMsgForContent( 'mainpage' ) )->getFullURL(),
-                                        'id'     => 'mainpage',
+                                        'id'     => 'n-mainpage',
                                         'active' => ''
                                 ),
 				array(
                                         'text'   => 'Random Page',
                                         'href'   => Title::newFromText( wfMsgForContent( 'randompage-url' ) )->getFullURL(),
-                                        'id'     => 'randompage',
+                                        'id'     => 'n-randompage',
                                         'active' => ''
                                 )
                         )
@@ -34,25 +34,26 @@ function lfHideSidebar( $skin, &$bar ) {
                 $bar['navigation'][] = array(
 					 'text'   => 'Community Portal',
                                         'href'   => Title::newFromText( wfMsgForContent( 'portal-url' ) )->getFullURL(),
-                                        'id'     => 'portal',
+                                        'id'     => 'n-portal',
                                         'active' => ''
 		);
 		$bar['navigation'][] = array(
 					 'text'   => 'Current Events',
                                         'href'   => Title::newFromText( wfMsgForContent( 'currentevents-url' ) )->getFullURL(),
-                                        'id'     => 'currentevents',
+                                        'id'     => 'n-currentevents',
                                         'active' => ''
 		);
 		$bar['navigation'][] = array(
 					 'text'   => 'Recent Changes',
                                         'href'   => Title::newFromText( wfMsgForContent( 'recentchanges-url' ) )->getFullURL(),
-                                        'id'     => 'recentchanges',
-                                        'active' => ''
+                                        'id'     => 'n-recentchanges',
+                                        'active' => '',
+					
 		);
 		$bar['navigation'][] = array(
 					 'text'   => 'Help',
                                         'href'   => Title::newFromText( wfMsgForContent( 'helppage' ) )->getFullURL(),
-                                        'id'     => 'recentchanges',
+                                        'id'     => 'n-help',
                                         'active' => ''
 		);
 
